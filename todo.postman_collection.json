@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "cbdedbf8-0133-41ae-bd16-ba0d72abec8c",
+		"name": "todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25323490",
+		"_collection_link": "https://red-star-387536.postman.co/workspace/Livery~ff537166-0a69-4aeb-bf22-720626ca7506/collection/25323490-cbdedbf8-0133-41ae-bd16-ba0d72abec8c?action=share&source=collection_link&creator=25323490"
+	},
+	"item": [
+		{
+			"name": "todos",
+			"item": [
+				{
+					"name": "Add Todos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2RvQGdtYWlsLmNvbSIsImV4cCI6MTcxMDQwMjYyNn0.rNbPo12xxjGixcnlwwJippEIfwyylUPWGQWdtuEhxdU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Letest Todo\",\n    \"description\":\"Now Todo Descriptions\",\n    \"completed\":false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000"
+					},
+					"response": []
+				},
+				{
+					"name": "Todos List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2RvQGdtYWlsLmNvbSIsImV4cCI6MTcxMDQwNDQ0NX0.04m28ea54dgCV40CzkcfzjKg_HyrmLDlfiCk5SZj4pc",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000"
+					},
+					"response": []
+				},
+				{
+					"name": "Todo detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2RvQGdtYWlsLmNvbSIsImV4cCI6MTcxMDQwNDQ0NX0.04m28ea54dgCV40CzkcfzjKg_HyrmLDlfiCk5SZj4pc",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/2/"
+					},
+					"response": []
+				},
+				{
+					"name": "Todo Del",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2RvQGdtYWlsLmNvbSIsImV4cCI6MTcxMDQwNDQ0NX0.04m28ea54dgCV40CzkcfzjKg_HyrmLDlfiCk5SZj4pc",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/5/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Todo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5MzU4OTIyLCJpYXQiOjE3MDkyNzI1MjIsImp0aSI6ImYwYmY5ZDRiY2NkNzQ3MTVhMTE5YjIwODZjMjExM2ZlIiwidXNlcl9pZCI6Mn0.x6PzY8_Cx438ThrsFm4VHHJl6QEFiOAk-7CyJywPy1g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Now Todo\",\n    \"description\":\"Now Todo Descriptions\",\n    \"completed\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/1/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\":\"todo@gmail.com\",\n   \"password\":\"todo@1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\":\"todo@gmail.com\",\n   \"password\":\"todo@1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2RvQGdtYWlsLmNvbSIsImV4cCI6MTcxMDM5OTU5MX0.XoaSixdxNWU7WeGh_7Vaz-iRTyO8-f3N5n3466qPOVA",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/logout/"
+			},
+			"response": []
+		}
+	]
+}
